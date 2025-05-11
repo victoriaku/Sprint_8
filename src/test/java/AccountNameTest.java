@@ -1,4 +1,5 @@
 import com.github.javafaker.Faker;
+import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -40,6 +41,7 @@ public class AccountNameTest {
         };
     }
 
+    @DisplayName("Тест на метод валидации строки класса Account")
     @Test
     public void accountNameTest(){
         Account account = new Account(name);
